@@ -1,1 +1,1 @@
-import './src/route'
+import './src/root'
