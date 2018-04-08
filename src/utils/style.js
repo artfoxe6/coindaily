@@ -2,7 +2,7 @@
 const style = {
 
     theme:{
-        bcolor:'#000', //rgba(51,69,83,1)
+        bcolor:'#2197C8', //rgba(51,69,83,1)
         ocolor:'rgba(51,69,83,0.1)'
     }
 }

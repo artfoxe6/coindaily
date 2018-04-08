@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { connect } from 'react-redux';
 import Tab1 from './tab1'
 import Tab2 from './tab2'
-// import Tab3 from './tab3'
+import Tab3 from './tab3'
 import Tab4 from './tab4'
 import Tabbar from '../utils/tabbar'
 import style from '../utils/style'
@@ -100,8 +100,8 @@ class Index extends Component {
         this.props.logining()
     }
     render() {
-        const tabIconNames = ["star-o","comments-o","user-o"];
-        const tabNames = ["动态","联系人","收藏"];
+        const tabIconNames = ["star-o","comments-o","user-o","user-o"];
+        const tabNames = ["动态","联系人","收藏","ceshi"];
         return(
             <View style={{flex:1,backgroundColor:'#fff'}}>
                 <StatusBar barStyle="light-content" />
@@ -136,7 +136,7 @@ class Index extends Component {
                     >
                     <Tab1 indexthis={this} tabLabel="React1"  />
                     <Tab2 indexthis={this} tabLabel="React2" navigation={this.props.navigation} />
-                    {/* <Tab3 tabLabel="React3" navigation={this.props.navigation} /> */}
+                    <Tab3 tabLabel="React3" navigation={this.props.navigation} />
                     <Tab4 tabLabel="React4" navigation={this.props.navigation} />
         
                 </ScrollableTabView>

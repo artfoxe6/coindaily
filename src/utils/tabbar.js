@@ -17,11 +17,11 @@ export default class Tabbar extends Component{
               return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={[styles.tab,{borderBottomColor:style.theme.bcolor}]}>
               <Icon
                 name={this.props.tabIconNames[i]}
-                size={25}
+                size={20}
                 color={style.theme.bcolor}
                 ref={(icon) => { this.tabIcons[i] = icon; }}
               />
-              <Text style={{color:style.theme.bcolor}}>
+              <Text style={{color:style.theme.bcolor,fontSize:10}}>
                 {this.props.tabNames[i]}
               </Text>
             </TouchableOpacity>;
@@ -29,11 +29,11 @@ export default class Tabbar extends Component{
               return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={styles.tab}>
               <Icon
                 name={this.props.tabIconNames[i]}
-                size={25}
+                size={20}
                 color={'#333'}
                 ref={(icon) => { this.tabIcons[i] = icon; }}
               />
-              <Text style={{color:'#333'}}>
+              <Text style={{color:'#333',fontSize:10}}>
                 {this.props.tabNames[i]}
               </Text>
             </TouchableOpacity>;
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     borderBottomWidth:2,
   },
   tabs: {
-    height: 60,
+    height: 45,
     flexDirection: 'row',
     backgroundColor:'#fff',
     borderTopColor:'#ddd',
