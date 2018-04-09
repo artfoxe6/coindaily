@@ -14,14 +14,14 @@ export default class Tabbar extends Component{
         return <View style={styles.tabs}>
           {this.props.tabs.map((tab, i) => {
             if(this.props.activeTab == i) {
-              return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={[styles.tab,{borderBottomColor:style.theme.bcolor}]}>
+              return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={[styles.tab,{backgroundColor:"#3C93A0"}]}>
               <Icon
                 name={this.props.tabIconNames[i]}
-                size={20}
-                color={style.theme.bcolor}
+                size={25}
+                color={"#fff"}
                 ref={(icon) => { this.tabIcons[i] = icon; }}
               />
-              <Text style={{color:style.theme.bcolor,fontSize:10}}>
+              <Text style={{color:"#fff",fontSize:12}}>
                 {this.props.tabNames[i]}
               </Text>
             </TouchableOpacity>;
@@ -29,11 +29,11 @@ export default class Tabbar extends Component{
               return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={styles.tab}>
               <Icon
                 name={this.props.tabIconNames[i]}
-                size={20}
-                color={'#333'}
+                size={25}
+                color={'#eee'}
                 ref={(icon) => { this.tabIcons[i] = icon; }}
               />
-              <Text style={{color:'#333',fontSize:10}}>
+              <Text style={{color:'#eee',fontSize:12}}>
                 {this.props.tabNames[i]}
               </Text>
             </TouchableOpacity>;
@@ -50,14 +50,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
-    borderBottomColor:'#fff',
-    borderBottomWidth:2,
   },
   tabs: {
-    height: 45,
+    height: 55,
     flexDirection: 'row',
-    backgroundColor:'#fff',
-    borderTopColor:'#ddd',
-    borderTopWidth:1
+    backgroundColor:style.theme.bcolor,
   },
 });
