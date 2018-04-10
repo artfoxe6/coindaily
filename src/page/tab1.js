@@ -16,7 +16,7 @@ export default class Tab1 extends Component {
 			<ScrollView>
 				<View style={{flexDirection:'row'}} >
 					<Swiper style={{backgroundColor:'transparent'}} height={200} width={width}>
-						<Image source={require('../images/slide1.jpg')} style={{width:width,height:200}} />
+						<Image source={require('../images/slide.jpg')} style={{width:width,height:200}} />
 						<Image source={require('../images/slide2.jpg')} style={{width:width,height:200}} />
 						<Image source={require('../images/slide3.jpg')} style={{width:width,height:200}} />
 						<Image source={require('../images/slide4.jpg')} style={{width:width,height:200}} />
