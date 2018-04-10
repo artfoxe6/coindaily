@@ -8,8 +8,9 @@ import Music from './page/music';
 import Player from './page/player';
 import { View } from 'react-native';
 import Video from 'react-native-video'
+
 const Pages = {
-    Index: { screen: Index },
+    Index: { screen: Index},
     Player: { screen: Player },
     Music: { screen: Music },
     Boot: { screen: Boot }

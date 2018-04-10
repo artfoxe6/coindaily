@@ -43,7 +43,7 @@ class Index extends Component {
                     <Tab2 tabLabel="React2" />
                     <Tab3 tabLabel="React3" />
                     <Tab4 tabLabel="React4" />
-        
+
                 </ScrollableTabView>
             </View>
         )
