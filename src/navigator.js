@@ -4,15 +4,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Index from './page/index';
 import Boot from './page/boot';
-import Music from './page/music';
-import Player from './page/player';
+import IcoDetail from './page/icodetail';
+import Search from './page/search';
 import { View } from 'react-native';
 import Video from 'react-native-video'
 
 const Pages = {
     Index: { screen: Index},
-    Player: { screen: Player },
-    Music: { screen: Music },
+    Search: { screen: Search },
+    IcoDetail: { screen: IcoDetail },
     Boot: { screen: Boot }
 }
 export const AppNavigator = StackNavigator(Pages,{ headerMode: 'none'});

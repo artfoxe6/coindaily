@@ -11,7 +11,7 @@ import Tabbar from '../utils/tabbar'
 import style from '../utils/style'
 import * as C from '../utils/common'
 const tabIconNames = ["star-o","comments-o","user-o","user-o"];
-const tabNames = ["项目","资讯","行情","我的"];
+const tabNames = ["项目","资讯","币友","我的"];
 class Index extends Component {
     constructor() {
         super()
@@ -24,15 +24,16 @@ class Index extends Component {
                 <View style={{height:20,backgroundColor:style.theme.bcolor}} ></View>
                 <View style={{height:50,backgroundColor:style.theme.bcolor,justifyContent:'space-between',alignItems  :'center',flexDirection:'row',paddingLeft:10,paddingRight:10}} >
                     <Image style={{width:30,height:30,borderRadius:15}} source={require('../images/logo.png')} />
-                    <Text style={{color:'#fff',fontSize:18,fontWeight:'bold'}}>每日币读</Text>
+                    <Text style={{color:'#fff',fontSize:18,fontWeight:'bold'}}>{this.props.app.tabName}</Text>
                     <Icon
-                        onPress={()=>{this.login()}}
+                        onPress={()=>{this.props.navigation.navigate("Search",{haha:'iii'})}}
                         name={'ios-search'}
                         size={30}
                         color={'#fff'}
                     />
                 </View>
                 <ScrollableTabView
+                    onChangeTab={(i)=>{this.props.changeTab(i.i)}}
                     ref = {(tabview)=>this.tabview = tabview}
                     locked={false}
                     tabBarPosition={'bottom'}
@@ -52,11 +53,12 @@ class Index extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    user:state.user
+    app:state.app
 });
 const mapDispatchToProps = (dispatch) => {
     return {
-        logining: () => dispatch({type:"LOGIN"})
+        changeTab: (index) => dispatch({type:"tabIndex",tabIndex:index}),
+        // goSearch:()=>dispatch({type})
     }
 }
 

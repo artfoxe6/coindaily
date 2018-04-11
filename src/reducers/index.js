@@ -2,12 +2,12 @@
 import { combineReducers } from 'redux';
 import user from './user';
 import nav from './nav';
-import player from './player';
+import app from './app';
 
 const Reducers = combineReducers({
     user,
-    nav,
-    player
+    app,
+    nav
 });
 
 export default Reducers

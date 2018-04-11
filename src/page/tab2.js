@@ -13,9 +13,8 @@ export default class Tab2 extends Component{
             data:[],
             refreshing:true,
             rand:0
-        }
-        
-      
+        } 
+        this.index = 0
     }
     componentDidMount() {
         setTimeout(()=>{
@@ -51,10 +50,10 @@ export default class Tab2 extends Component{
     renderRowItem(data) {
         index = data.index+1
         return(
-          <View>
+          <View >
             <View style={{margin:20,backgroundColor:'#fff'}}>
               <View style={{marginBottom:10,padding:20,backgroundColor:'#4EBAC8'}}>
-                  <Text style={{fontSize:18,lineHeight:30,color:index%6==0?'red':'#fff',fontWeight:'bold'}}>{data.item.name} - {data.item.title}</Text>
+                  <Text style={{fontSize:18,lineHeight:30,color:'#fff',fontWeight:'bold'}}>{data.item.name} - {data.item.title}</Text>
                   <View style={{flexDirection:'row',justifyContent:'space-between',marginBottom:10,paddingRight:10,marginTop:10,alignItems:'center'}}>
                       <Text  style={{color:"#fff"}}>
                       每日币读 | 2018/12/20
@@ -66,7 +65,7 @@ export default class Tab2 extends Component{
                   </View>
               </View>
               <View style={{padding:20}}>
-                  <Text style={{color:index%6==0?'red':'#555',lineHeight:25,fontSize:14}}>
+                  <Text style={{color:index%6==0?'#ff536a':'#555',lineHeight:25,fontSize:14}}>
                   {data.item.intro}
                   </Text>
               </View>
@@ -82,7 +81,7 @@ export default class Tab2 extends Component{
             this.setState({data:[...data],refreshing:false})
         },1000)
     }
-    _keyExtractor = (item, index) => index
+    _keyExtractor = (item, index) => index.toString()
     render() {
 
         return (
