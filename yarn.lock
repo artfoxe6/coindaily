@@ -4265,11 +4265,21 @@ react-native-fast-image@^4.0.0:
   dependencies:
     prop-types "^15.5.10"
 
+react-native-image-pan-zoom@^2.1.2:
+  version "2.1.2"
+  resolved "http://registry.npm.taobao.org/react-native-image-pan-zoom/download/react-native-image-pan-zoom-2.1.2.tgz#278bd8b044ba94b13d1f194c73c1a7da26d903e3"
+
 react-native-image-progress@^1.1.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/react-native-image-progress/download/react-native-image-progress-1.1.0.tgz#737140d699fb3fb107ec70615736dfdc2eef7b35"
   dependencies:
     prop-types "^15.5.10"
+
+react-native-image-zoom-viewer@^2.1.2:
+  version "2.1.2"
+  resolved "http://registry.npm.taobao.org/react-native-image-zoom-viewer/download/react-native-image-zoom-viewer-2.1.2.tgz#e21b0667c7a4681b105ea92e8b7d23f6bd5b5335"
+  dependencies:
+    react-native-image-pan-zoom "^2.1.2"
 
 react-native-progress@^3.4.0:
   version "3.4.0"
