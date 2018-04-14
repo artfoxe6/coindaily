@@ -6,10 +6,12 @@ import Index from './page/index';
 import Boot from './page/boot';
 import IcoDetail from './page/icodetail';
 import Search from './page/search';
+import Animate from './page/animate';
 import { View } from 'react-native';
 import Video from 'react-native-video'
 
 const Pages = {
+    Animate: { screen: Animate},
     Index: { screen: Index},
     Search: { screen: Search },
     IcoDetail: { screen: IcoDetail },
