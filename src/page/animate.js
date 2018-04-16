@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Animated,Text,View
 } from 'react-native';
-const test  = new Animated.Value(0)
+const test  = new Animated.ValueXY(0,0)
 class FadeInView extends Component {
   constructor(props) {
     super(props);
@@ -16,9 +16,10 @@ class FadeInView extends Component {
       test,                      // 动画中的变量值
       {
         toValue: 1,
-        duration:5000                             // 透明度最终变为1，即完全不透明
+        duration:(10,10)                             // 透明度最终变为1，即完全不透明
       }
     ).start();                                  // 开始执行动画
+
   }
   render() {
     return (
