@@ -52,16 +52,22 @@ export default class Tab2 extends Component{
         return(
           <View >
             <View style={{margin:20,backgroundColor:'#fff'}}>
-              <View style={{marginBottom:10,padding:20,backgroundColor:'#4EBAC8'}}>
+              <View style={{marginBottom:10,padding:20,backgroundColor:'#777'}}>
                   <Text style={{fontSize:18,lineHeight:30,color:'#fff',fontWeight:'bold'}}>{data.item.name} - {data.item.title}</Text>
                   <View style={{flexDirection:'row',justifyContent:'space-between',marginBottom:10,paddingRight:10,marginTop:10,alignItems:'center'}}>
-                      <Text  style={{color:"#fff"}}>
-                      每日币读 | 2018/12/20
-                      </Text>
-                      <TouchableOpacity onPress={()=>{ C.tip('未完待续') }}>
-                      {/* <Text  style={{color:"#fff"}}>分享</Text> */}
-                      <Icon name={'md-share'} size={30} color={'#fff'} />
-                      </TouchableOpacity>
+                        <Text  style={{color:"#fff"}}>
+                        每日币读 | 2018/12/20
+                        </Text>
+                        <View style={{flexDirection:'row'}} >
+                            <TouchableOpacity style={{flexDirection:'row',alignItems:'center'}} onPress={()=>{ C.tip('未完待续') }}>
+                                <Icon name={'ios-text'} size={25} color={'#fff'} />
+                                <Text style={{color:"#fff",marginLeft:5}}>16</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{flexDirection:'row',alignItems:'center',marginLeft:10}} onPress={()=>{ C.tip('未完待续') }}>
+                                <Icon name={'ios-share-alt'} size={25} color={'#fff'} />
+                                <Text style={{color:"#fff",marginLeft:5}}>分享</Text>
+                            </TouchableOpacity>
+                        </View>
                   </View>
               </View>
               <View style={{padding:20}}>

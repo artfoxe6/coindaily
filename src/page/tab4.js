@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text,TouchableOpacity,Image,Dimensions  } from 'react-native';
+import { View, Text,TouchableOpacity,Image,Dimensions,ScrollView  } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import style from '../utils/style'
 class Tab4 extends Component {
   render() {
     return (
-      <View style={{flex:1,backgroundColor:'#eee'}}>
+      <ScrollView style={{flex:1,backgroundColor:'#eee'}}>
 		<View style={{height:140,padding:20,width:'100%',backgroundColor:'#fff',flexDirection:'row',justifyContent:'space-between',alignItems:'center'}} >
 			<Image
 				source={require('../images/head.jpg')}
@@ -51,14 +51,17 @@ class Tab4 extends Component {
 				<Icon  name="ios-arrow-forward-outline"  size={24}  color="#aaa" />
 			</View>
 		</TouchableOpacity>
-		<TouchableOpacity>
+		<TouchableOpacity onPress={()=>this.props.navigation.navigate('Feedback')}>
 			<View style={{backgroundColor:'#fff',alignItems: 'center',flex:0,flexDirection: 'row',height:50,width:'100%',justifyContent: 'space-between',paddingLeft:20,paddingRight:20}}>
 				<Text style={{color:'#444'}}>问题反馈</Text>
 				<Icon  name="ios-arrow-forward-outline"  size={24}  color="#aaa" />
 			</View>
 		</TouchableOpacity>
-		<Text style={{color:'#ccc',fontSize:14,textAlign:'center',marginTop:20}}>每日币读V2.1</Text>
-      </View>
+		<TouchableOpacity onPress={()=>this.props.navigation.navigate('Login')} style={{flexDirection:'row',alignItems:'center',backgroundColor:'#EC4184',height:50,justifyContent:'center'}} >
+			<Text style={{color:"#fff",fontWeight:'bold',fontSize:16}}>退出登陆</Text>
+		</TouchableOpacity>
+		{/* <Text style={{color:'#ccc',fontSize:14,textAlign:'center',marginTop:20}}>每日币读V2.1</Text> */}
+      </ScrollView>
     );
   }
 }

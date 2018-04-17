@@ -7,7 +7,7 @@ import Tab1 from './tab1'
 import Tab2 from './tab2'
 import Tab3 from './tab3'
 import Tab4 from './tab4'
-import Tabbar from '../utils/tabbar'
+import Tabbar from '../components/TabBar'
 import style from '../utils/style'
 import * as C from '../utils/common'
 const tabIconNames = ["star-o","comments-o","user-o","user-o"];
@@ -43,7 +43,7 @@ class Index extends Component {
                     <Tab1 tabLabel="React1" />
                     <Tab2 tabLabel="React2" />
                     <Tab3 tabLabel="React3" />
-                    <Tab4 tabLabel="React4" />
+                    <Tab4 navigation={this.props.navigation} tabLabel="React4" />
 
                 </ScrollableTabView>
             </View>
