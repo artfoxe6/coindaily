@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text,TouchableOpacity,Image,Dimensions,ScrollView  } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import style from '../utils/style'
+import Switch from 'react-native-switch-pro'
 class Tab4 extends Component {
   render() {
     return (
@@ -29,7 +30,8 @@ class Tab4 extends Component {
 		<TouchableOpacity>
 			<View style={{backgroundColor:'#fff',alignItems: 'center',flex:0,flexDirection: 'row',height:50,width:'100%',justifyContent: 'space-between',paddingLeft:20,paddingRight:20}}>
 				<Text style={{color:'#444'}}>推送管理</Text>
-				<Icon  name="ios-arrow-forward-outline"  size={24}  color="#999" />
+				<Switch onSyncPress={value => {}}/>
+				{/* <Icon  name="ios-arrow-forward-outline"  size={24}  color="#999" /> */}
 			</View>
 		</TouchableOpacity>
 

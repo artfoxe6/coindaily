@@ -4311,6 +4311,12 @@ react-native-swiper@^1.5.13:
   dependencies:
     prop-types "^15.5.10"
 
+react-native-switch-pro@^0.4.10:
+  version "0.4.10"
+  resolved "http://registry.npm.taobao.org/react-native-switch-pro/download/react-native-switch-pro-0.4.10.tgz#79d826f5574cef3fe720273e40bb2c472bb3543e"
+  dependencies:
+    prop-types "^15.5.10"
+
 "react-native-tab-view@github:react-navigation/react-native-tab-view":
   version "0.0.74"
   resolved "https://codeload.github.com/react-navigation/react-native-tab-view/tar.gz/36ebd834d78b841fc19778c966465d02fd1213bb"

@@ -11,13 +11,16 @@ import Login from './page/login';
 import Register from './page/register';
 import Forget from './page/forget';
 import Feedback from './page/feedback';
+import Comments from './page/comments';
 // import { View } from 'react-native';
 import Video from 'react-native-video'
 
 const Pages = {
-    // Animate: { screen: Animate},
+    Comments: { screen: Comments},
+    Animate: { screen: Animate},
     Login: { screen: Login},
     Feedback: { screen: Feedback},
+    
     
     Forget: { screen: Forget},
     

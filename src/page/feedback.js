@@ -18,14 +18,20 @@ class Feedback extends Component {
 				editable = {true}
 				maxLength = {40}
 				multiline={true}
+				underlineColorAndroid = {"transparent"}
 				placeholder={"请输入内容..."}
 				placeholderTextColor={"#4EBAC8"}
-				style={{width:'100%',height:200,backgroundColor:"rgba(255,255,255,0.9)",padding:10,fontSize:16,lineHeight:40}}
+				style={{width:'100%',height:200,backgroundColor:"rgba(255,255,255,0.9)",padding:10,fontSize:16,lineHeight:40,textAlignVertical: 'top'}}
 			/>
 			<TouchableOpacity style={{flexDirection:'row',alignItems:'center',backgroundColor:'#fff',height:50,justifyContent:'center',marginTop:0,borderColor:'#4EBAC8',borderTopWidth:1,borderBottomWidth:1}} >
 				<Text style={{color:"#4EBAC8",fontWeight:'bold',fontSize:16}}>提交反馈</Text>
 			</TouchableOpacity>
 		</View>
+
+			<View style={{position:'absolute',bottom:0,left:0,width:'100%',alignItems:'center'}}>
+				<Text style={{color:'#777'}}>联系开发作者</Text>
+				<Text style={{color:'#777',margin:10}}>hackerjieson@gmail.com</Text>
+			</View>
 	  </View>
 	);
   }
