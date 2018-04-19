@@ -11,7 +11,8 @@ import Login from './page/login';
 import Register from './page/register';
 import Forget from './page/forget';
 import Feedback from './page/feedback';
-import Comments from './page/comments';
+import Comments from './page/comment';
+import CommentList from './page/commentlist';
 // import { View } from 'react-native';
 import Video from 'react-native-video'
 
@@ -20,7 +21,7 @@ const Pages = {
     Animate: { screen: Animate},
     Login: { screen: Login},
     Feedback: { screen: Feedback},
-    
+    CommentList: { screen: CommentList},    
     
     Forget: { screen: Forget},
     

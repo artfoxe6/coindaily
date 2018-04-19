@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {View,Text,TouchableOpacity,Dimensions,FlatList,Image,ScrollView,TextInput,Button,StyleSheet,StatusBar,AsyncStorage,Alert} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons';
-export default class Cmdynamic extends Component {
+export default class Comment extends Component {
 
     constructor(props) {
         super(props)
