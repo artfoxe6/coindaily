@@ -39,7 +39,7 @@ export default class Comment extends Component {
 							style={{height:Dimensions.get('window').height/3,paddingTop:10,paddingRight:20,textAlignVertical:'top',marginTop:10,flex:1,color:'#666',}}
 						/>
 					</View>
-					<Icon onPress={()=>this.props.navigation.goBack()} name="md-image"   size={40}  style={{textAlign:'left',marginLeft:10,marginTop:10}} color="#999" />
+					{/* <Icon onPress={()=>this.props.navigation.goBack()} name="md-image"   size={40}  style={{textAlign:'left',marginLeft:10,marginTop:10}} color="#999" /> */}
                     
             </View>
         )

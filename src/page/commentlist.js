@@ -13,34 +13,26 @@ export default class CommentList extends Component {
     }
     render() {
         return (
-            <View  style={{flex:1}}>
+            <View  style={{flex:1,backgroundColor:'#fff'}}>
                 <StatusBar barStyle="default" />
 				<View style={{height:25}} ></View>
-                    <View style={{height:55,flexDirection:'row',alignItems:'center',justifyContent:'space-between',backgroundColor:'#fff',width:'100%',borderBottomColor:'#eee',borderBottomWidth:1}}>
-                        <Icon onPress={()=>this.props.navigation.goBack()} name="ios-close"   size={40}  style={{marginLeft:20}} color="#4EBAC8" />
-                        <TouchableOpacity style={{backgroundColor:'#4EBAC8',width:60,height:30,justifyContent:'center',alignItems:"center",marginRight:20,borderRadius:15}}>
-                        <Text style={{color:"#fff",fontSize:17}} >回复</Text>
-						</TouchableOpacity>
+                <View style={{height:55,flexDirection:'row',alignItems:'center',justifyContent:'space-between',backgroundColor:'#fff',width:'100%',borderBottomColor:'#eee',borderBottomWidth:1}}>
+                    <Icon onPress={()=>this.props.navigation.goBack()} name="ios-close"   size={40}  style={{marginLeft:20}} color="#4EBAC8" />
+                </View>
+                <View style={{padding:10}}>
+                    <View style={{flexDirection:'row',width:'100%',backgroundColor:'#fff',alignItems:'center'}}>
+                        <Image
+                        source={require('../images/touxiang.jpg')}
+                        style={{width:40,height:40,borderRadius:20}}/>
+                        <Text style={{fontSize:16,color:"#555",marginLeft:10}}>微微一笑:</Text>
                     </View>
-
-					{/* <View style={{marginTop:10,padding:20,backgroundColor:'#fff'}}>
-						<Text style={{fontSize:18,lineHeight:30,color:'#999',fontWeight:'bold'}}>次俗称对策户撒出生地   成绩上帝哦雌激素低哦出生地</Text>
-					</View> */}
-
-                    <View style={{flexDirection:'row',width:'100%',backgroundColor:'#fff',borderBottomColor:'#eee',borderBottomWidth:1}}>
-						<Image
-                    	source={require('../images/touxiang.jpg')}
-                    	style={{width:40,height:40,borderRadius:20,margin:10}}/>
-						<TextInput
-							underlineColorAndroid={'transparent'}
-							multiline={true}
-							onChangeText={(text) => this.setState({content:text})}
-							placeholder="添加评论..."
-							style={{height:Dimensions.get('window').height/3,paddingTop:10,paddingRight:20,textAlignVertical:'top',marginTop:10,flex:1,color:'#666',}}
-						/>
-					</View>
-					<Icon onPress={()=>this.props.navigation.goBack()} name="md-image"   size={40}  style={{textAlign:'left',marginLeft:10,marginTop:10}} color="#999" />
-                    
+                    <View >
+                        <Text style={{marginLeft:50,fontSize:15,color:"#555",lineHeight:25}}>0x是一个点对点交易的开源协议，以促进以太坊区块链中erc20代币的交易。该协议旨在作为开放标准和通用构建模块，推动包括交易所功能的去中心化应用（dapps）之间的互操作性。</Text>
+                    </View>
+                    <View style={{flexDirection:'row',justifyContent:'flex-end',paddingRight:10}}>
+                        <TouchableOpacity style={{flexDirection:'row',alignItems:'center',}}><Icon name={'md-thumbs-up'} size={25} color={'#000'} style={{margin:5}}  /><Text style={{color:"#000"}}>9</Text></TouchableOpacity>
+                    </View>
+				</View>
             </View>
         )
     }
