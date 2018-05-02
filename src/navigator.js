@@ -1,3 +1,4 @@
+"use strict"
 
 import { StackNavigator,addNavigationHelpers } from 'react-navigation';
 import React from 'react';
@@ -13,8 +14,7 @@ import Forget from './page/forget';
 import Feedback from './page/feedback';
 import Comments from './page/comment';
 import CommentList from './page/commentlist';
-// import { View } from 'react-native';
-import Video from 'react-native-video'
+
 
 const Pages = {
     Comments: { screen: Comments},
@@ -22,11 +22,8 @@ const Pages = {
     Login: { screen: Login},
     Feedback: { screen: Feedback},
     CommentList: { screen: CommentList},    
-    
     Forget: { screen: Forget},
-    
     Register: { screen: Register},
-    
     Index: { screen: Index},
     Search: { screen: Search },
     IcoDetail: { screen: IcoDetail },
