@@ -19,17 +19,27 @@ class IcoDetail extends Component {
 					color={'#fff'}
 				/>
 			</View>
-			<View style={{height:120,padding:20,width:'100%',backgroundColor:'#fff',flexDirection:'row',justifyContent:'space-between',alignItems:'center',borderBottomColor:'#eee',borderBottomWidth:1}} >
+			<View style={{height:120,padding:20,width:'100%',backgroundColor:'#fff',flexDirection:'row',justifyContent:'space-between',alignItems:'center',}} >
 				<Image
 					source={require('../images/coin2.png')}
 					style={{width:100,height:100,borderRadius:10}} />
 				<View style={{marginLeft:15,flex:1,alignContent:'center',justifyContent:'space-between',width:Dimensions.get('window').width-160,alignItems:'flex-start'}}>
 					<View style={{marginLeft:10}}>
-						<Text style={{fontWeight:'bold',fontSize:20,color:"#ff536a",marginBottom:20}}>综合评分：8.3</Text>
-						<Text style={{color:'#666',fontSize:14,lineHeight:20}}>市场：87   			团队：87</Text>
-						<Text style={{color:'#666',fontSize:14,lineHeight:20}}>技术：87   			营销：87</Text>
+						<Text style={{fontWeight:'bold',fontSize:18,color:"#ff536a",marginBottom:10}}>综合评分：8.3</Text>
+						<Text style={{color:'#666',fontSize:14,lineHeight:20}}>项目类型：智能合约</Text>
+						<View style={{flexDirection:'row',justifyContent:'flex-start',alignItems:'center',width:'100%'}}>
+						<Text style={{color:style.theme.bcolor}}>官网</Text>
+						<Text style={{color:style.theme.bcolor}}>白皮书</Text>
+						<Text style={{color:style.theme.bcolor}}>美国</Text>
+						{/* <Text style={{color:'#666',fontSize:14,lineHeight:20}}>官网 白皮书 美国</Text> */}
+						</View>
 					</View>
 				</View>
+			</View>
+			<View style={{flexDirection:'row',justifyContent:'space-around',alignItems:'center',height:40,borderBottomColor:'#eee',borderBottomWidth:1,borderTopColor:'#eee',borderTopWidth:1}}>
+				<Text style={{color:style.theme.bcolor}}>项目简介</Text>
+				<Text style={{color:style.theme.bcolor}}>评论 564</Text>
+				<Text style={{color:'#ccc'}}>代投</Text>
 			</View>
 			
       </View>
